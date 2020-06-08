@@ -3,7 +3,7 @@ services:
     - docker
 
 before_install: 
-    - docker build -t codenelly/ReactTravis -f Dockerfile.dev  .
+    - docker build -t codenelly/reactTravis -f Dockerfile.dev  .
 
 script:
-    - docker run -t codenelly/ReactTravis npm run test -- --coverage
+    - docker run -t codenelly/reactTravis npm run test -- --coverage
